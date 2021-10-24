@@ -10,7 +10,8 @@ let running = () => {
   let i = 1;
   setInterval(function text() {
     let c = document.getElementById("counter");
-    c.innerHTML = i++;
+    let date = new Date();
+    c.innerHTML = date.toLocaleString();
   }, 1000);
 };
 running();
